@@ -1,0 +1,311 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#title {
+  background: linear-gradient(to bottom, #C4DDFF, #DAEAF1);
+}
+
+.play-icon{
+  color: #1363DF;
+}
+
+.play-icon:hover{
+  color: white;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: bolder;
+}
+
+.container-fluid {
+  padding: 3% 8%;
+}
+
+.top-button:hover {
+  background-color: #2C3333;
+  color: #DDDDDD;
+}
+
+.top-button {
+  margin: 5% 3% 5% 0;
+  border: 1px solid #7F8487;
+  color: #7F8487;
+}
+
+li .nav-link {
+  color: #7F8487;
+  font-size: 1.2rem;
+}
+
+li .nav-link:hover {
+  color: #2C3333;
+}
+
+.nav-item {
+  padding: 0 1.2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img1 {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+}
+
+#features {
+  padding: 3% 5%;
+}
+
+.features-mid-top {
+  text-align: center;
+  padding: 5%;
+}
+
+h3 {
+  font-weight: bolder;
+  font-size: 2.3rem;
+}
+
+#features p {
+  color: grey;
+}
+
+#features h3{
+  cursor: pointer;
+}
+
+#features h3:hover{
+  color: #0AA1DD;
+}
+
+.icon {
+  color: #7FB5FF;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #0AA1DD;
+}
+#testimonials{
+  background: linear-gradient(to bottom, #C4DDFF, #DAEAF1);
+    animation: background-color 20s;
+    padding-top: 2%;
+    padding-bottom: 7%;
+}
+@keyframes background-color {
+    0% {
+        background: linear-gradient(to bottom, #C4DDFF, #DAEAF1);
+    }
+
+    25% {
+        background: linear-gradient(135deg, #C4DDFF, #DAEAF1);
+    }
+
+    50% {
+        background: linear-gradient(to bottom, #C4DDFF, #DAEAF1);
+    }
+
+    100% {
+        background: linear-gradient(-135deg, #C4DDFF, #EFFFFD, #DAEAF1);
+    }
+
+}
+
+#testimonials .container {
+    margin-top: 80px;
+}
+
+#testimonials .container .col-lg-4 {
+    display: flex;
+    justify-content: center;
+}
+
+#testimonials .card {
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    border: none;
+    background-color: inherit;
+}
+
+#testimonials .card .face {
+    position: absolute;
+    color: black;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.06);
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    backface-visibility: hidden;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+#testimonials .card .face.front-face,
+.card .face.back-face {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#testimonials .card .face.front-face .profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#testimonials .card .face.front-face .name {
+    letter-spacing: 2px;
+}
+
+#testimonials .card .face.front-face .designation {
+    font-size: 0.8rem;
+    color: grey;
+    letter-spacing: 0.8px;
+}
+
+#testimonials .card:hover .face.front-face {
+    transform: rotateY(180deg);
+}
+
+#testimonials .card .face.back-face {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.06);
+    transform: rotateY(180deg);
+    padding: 20px 30px;
+    text-align: center;
+    user-select: none;
+}
+
+#testimonials .card .face.back-face .fa-quote-left {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: 1.2rem;
+}
+
+#testimonials .card .face.back-face .fa-quote-right {
+    position: absolute;
+    bottom: 35px;
+    right: 25px;
+    font-size: 1.2rem;
+}
+
+#testimonials .card:hover .face.back-face {
+    transform: rotateY(360deg);
+}
+
+@media(max-width: 991.5px) {
+    .col-lg-4 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    
+}
+@media(max-width: 1028px) {
+   .col-lg-6{
+     text-align: center;
+   }
+ }
+
+#pricing{
+  background: url('https://images.unsplash.com/photo-1635048393237-3b90e5c4a692?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80') no-repeat center center/cover;
+  background-attachment: fixed;
+  padding: 5% 8%;
+}
+#cau-card{
+  text-align: right;
+
+}
+.para-pricing{
+  color: white;
+  font-size: 1.3rem;
+}
+.dif-version{
+  text-align: center;
+  color: grey;
+}
+.h2-versions{
+  font-size: 2.7rem;
+  font-weight: bolder;
+  color: white;
+  padding-bottom: 1.5%;
+}
+.mb-3{
+  font-size: 1.5rem;
+  text-align: left;
+  color: white;
+}
+.card-body{
+  text-align: center;
+}
+.card-title{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bolder;
+  color: black;
+}
+.card-text{
+  font-weight: lighter;
+  font-size: 1rem;
+  color: grey;
+}
+.img-fluid{
+  width: 30rem;
+  height: 20rem;
+}
+#cta{
+  background: linear-gradient(to right, #C4DDFF, #DAEAF1);
+  padding: 3% 5%;
+  text-align: center;
+}
+#cta h3{
+  font-weight: lighter;
+  font-size: 2rem;
+}
+
+.icon-1{
+  padding: 1.7%;
+  color: #7F8487;
+  cursor: pointer;
+}
+.icon-1:hover {
+  color: #2C3333;
+}
+
+#footer{
+  background: linear-gradient(to left, #C4DDFF, #DAEAF1);
+  padding-top: 1%;
+  padding-bottom: 0.7%;
+  text-align: center;
+  color: grey;
+}
